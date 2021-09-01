@@ -46,4 +46,4 @@ version = "1.7.1"
 features = ["parking_lot"]
 
 [build-dependencies]
-tonic-build = "0.4.2"
+tonic-build = "0.5.2"
