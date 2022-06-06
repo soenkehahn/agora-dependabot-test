@@ -40,7 +40,7 @@ sha2 = "0.9.5"
 tempfile = "3.2.0"
 
 [dev-dependencies.tokio]
-version = "1.7.1"
+version = "1.13.1"
 features = ["parking_lot"]
 
 [build-dependencies]
