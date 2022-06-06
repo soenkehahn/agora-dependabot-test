@@ -97,7 +97,7 @@ dependencies = [
  "hex",
  "http",
  "hyper",
- "image",
+ "image 0.23.12",
  "lexiclean",
  "libc",
  "lightning-invoice",
@@ -486,7 +486,7 @@ checksum = "2c89ae2e2ca1c95717eea500a89d26d69ff9298e97c6c61be9a61f8a0119dcfa"
 dependencies = [
  "failure",
  "failure_derive",
- "image",
+ "image 0.22.5",
  "log",
  "newtype_derive",
 ]
@@ -1448,6 +1448,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "gif"
+version = "0.11.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c3a7187e78088aead22ceedeee99779455b23fc231fe13ec443f99bb71694e5b"
+dependencies = [
+ "color_quant",
+ "weezl",
+]
+
+[[package]]
 name = "gimli"
 version = "0.25.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1719,14 +1729,33 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "08ed2ada878397b045454ac7cfb011d73132c59f31a955d230bd1f1c2e68eb4a"
 dependencies = [
  "byteorder",
- "gif",
+ "gif 0.10.3",
  "jpeg-decoder",
  "num-iter",
- "num-rational",
+ "num-rational 0.2.4",
  "num-traits",
  "png 0.15.3",
  "scoped_threadpool",
- "tiff",
+ "tiff 0.3.1",
+]
+
+[[package]]
+name = "image"
+version = "0.23.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7ce04077ead78e39ae8610ad26216aed811996b043d47beed5090db674f9e9b5"
+dependencies = [
+ "bytemuck",
+ "byteorder",
+ "color_quant",
+ "gif 0.11.3",
+ "jpeg-decoder",
+ "num-iter",
+ "num-rational 0.3.2",
+ "num-traits",
+ "png 0.16.8",
+ "scoped_threadpool",
+ "tiff 0.6.1",
 ]
 
 [[package]]
@@ -2212,6 +2241,17 @@ name = "num-rational"
 version = "0.2.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5c000134b5dbf44adc5cb772486d335293351644b801551abe8f75c84cfa4aef"
+dependencies = [
+ "autocfg",
+ "num-integer",
+ "num-traits",
+]
+
+[[package]]
+name = "num-rational"
+version = "0.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "12ac428b1cb17fce6f731001d307d351ec70a6d202fc2e60f7d4c5e42d8f4f07"
 dependencies = [
  "autocfg",
  "num-integer",
@@ -3804,6 +3844,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "tiff"
+version = "0.6.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9a53f4706d65497df0c4349241deddf35f84cee19c87ed86ea8ca590f4464437"
+dependencies = [
+ "jpeg-decoder",
+ "miniz_oxide 0.4.4",
+ "weezl",
+]
+
+[[package]]
 name = "time"
 version = "0.1.43"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4443,6 +4494,12 @@ checksum = "aabe153544e473b775453675851ecc86863d2a81d786d741f6b76778f2a48940"
 dependencies = [
  "webpki",
 ]
+
+[[package]]
+name = "weezl"
+version = "0.1.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9c97e489d8f836838d497091de568cf16b117486d529ec5579233521065bd5e4"
 
 [[package]]
 name = "wepoll-ffi"
