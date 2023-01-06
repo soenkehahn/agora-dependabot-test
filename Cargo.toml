@@ -59,7 +59,7 @@ version = "0.3.21"
 features = ["wrap_help"]
 
 [dependencies.tokio]
-version = "1.5.0"
+version = "1.16.1"
 features = ["rt", "rt-multi-thread", "macros", "fs"]
 
 [dependencies.tokio-stream]
